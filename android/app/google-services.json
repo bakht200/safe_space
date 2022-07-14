@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "655487028536",
+    "project_id": "safe-space-c7868",
+    "storage_bucket": "safe-space-c7868.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655487028536:android:fe742e0505bdf71c1105cd",
+        "android_client_info": {
+          "package_name": "com.example.safe_space"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655487028536-ai2gkb1eokelog8meevq14gck4nrrcok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv3hrPz4Y5C1G6GSRV2p9E8OK4tWYTNzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655487028536-ai2gkb1eokelog8meevq14gck4nrrcok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
