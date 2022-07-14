@@ -113,7 +113,7 @@ class AuthService {
       User? user = FirebaseAuth.instance.currentUser;
 
       final path = firebaseStorage.FirebaseStorage.instance
-          .ref("safespace//$subjectname${user!.uid}");
+          .ref("safespace/$subjectname${user!.uid}");
 
       for (var i = 0; i < file!.length; i++) {
         final child = path.child(DateTime.now().toString());
@@ -150,7 +150,7 @@ class AuthService {
       User? user = FirebaseAuth.instance.currentUser;
 
       final path = firebaseStorage.FirebaseStorage.instance
-          .ref("safespace${user!.uid}/$subjectname");
+          .ref("safespace/$subjectname${user!.uid}");
 
       final child = path.child("${fileType}");
       await child.putFile(File(file!));

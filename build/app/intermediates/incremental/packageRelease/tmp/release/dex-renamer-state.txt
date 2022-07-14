@@ -1,4 +1,0 @@
-#Tue Jul 12 23:32:45 PKT 2022
-base.0=/Users/productbox/Desktop/Webview/safe_space/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

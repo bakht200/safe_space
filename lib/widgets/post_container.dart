@@ -1,15 +1,12 @@
-import 'dart:io';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:safe_space/widgets/profile_avatar.dart';
 import 'package:safe_space/widgets/responsive.dart';
-import 'package:safe_space/widgets/show_video.dart';
+import 'package:safe_space/widgets/show_network_video.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import '../constants/palette.dart';
-import '../models/post_model.dart';
 
 class PostContainer extends StatelessWidget {
   var data;
@@ -56,7 +53,7 @@ class PostContainer extends StatelessWidget {
                                 );
                               }),
                         )
-                      : ShowVideo(
+                      : showNetworkVideo(
                           url: data['mediaUrl'],
                         ),
                 ],
