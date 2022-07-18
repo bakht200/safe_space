@@ -64,6 +64,7 @@ MERGED from [:path_provider_android] /Users/productbox/Desktop/Webview/safe_spac
 MERGED from [:better_player] /Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_secure_storage] /Users/productbox/Desktop/Webview/safe_space/build/flutter_secure_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:wakelock] /Users/productbox/Desktop/Webview/safe_space/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:fluttertoast] /Users/productbox/Desktop/Webview/safe_space/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:video_player_android] /Users/productbox/Desktop/Webview/safe_space/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/productbox/.gradle/caches/transforms-2/files-2.1/a35e7deafbbca66133ce715fee63e7b5/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/productbox/.gradle/caches/transforms-2/files-2.1/0a729947d9f2682586d5957414cbefca/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
@@ -178,6 +179,8 @@ MERGED from [:flutter_secure_storage] /Users/productbox/Desktop/Webview/safe_spa
 MERGED from [:flutter_secure_storage] /Users/productbox/Desktop/Webview/safe_space/build/flutter_secure_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-11:53
 MERGED from [:wakelock] /Users/productbox/Desktop/Webview/safe_space/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:wakelock] /Users/productbox/Desktop/Webview/safe_space/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/productbox/Desktop/Webview/safe_space/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/productbox/Desktop/Webview/safe_space/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:video_player_android] /Users/productbox/Desktop/Webview/safe_space/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:video_player_android] /Users/productbox/Desktop/Webview/safe_space/build/video_player_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/productbox/.gradle/caches/transforms-2/files-2.1/a35e7deafbbca66133ce715fee63e7b5/multidex-2.0.0/AndroidManifest.xml:20:5-43

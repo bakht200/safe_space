@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:safe_space/controller/provider_class.dart';
 import 'package:safe_space/screens/add_post.dart';
+import 'package:safe_space/widgets/drawer.dart';
 import '../constants/palette.dart';
+import '../constants/secure_storage.dart';
 import '../services/auth_services.dart';
+import '../widgets/custom_app_bar.dart';
 import '../widgets/post_container.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -19,6 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
   GetImageController getImageController = GetImageController();
 
   bool loading = false;
+  String? userId;
 
   @override
   void dispose() {
@@ -30,6 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     // TODO: implement initState
     fetchData();
+
     super.initState();
   }
 
@@ -38,6 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
       loading = true;
     });
     await getImageController.getPostList();
+    userId = await UserSecureStorage.fetchToken();
     setState(() {
       loading = false;
     });
@@ -47,6 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return GestureDetector(
         child: Scaffold(
+      drawer: Drawer(child: CustomDrawer()),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Palette.primaryColor,
         onPressed: () {
@@ -59,21 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       appBar: AppBar(
-        leading: const Icon(
-          Icons.navigate_before,
-          color: Colors.black,
-        ),
-        actions: [
-          GestureDetector(
-            onTap: () {
-              context.read<AuthService>().signOut(context);
-            },
-            child: const Icon(
-              MdiIcons.logout,
-              color: Colors.red,
-            ),
-          ),
-        ],
+        iconTheme: IconThemeData(color: Palette.primaryColor),
         backgroundColor: Colors.white,
         title: const Text(
           'Safe Space',
@@ -91,16 +86,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ? const Center(child: CircularProgressIndicator())
           : RefreshIndicator(
               onRefresh: fetchData,
-              child: AnimatedBuilder(
-                  animation: getImageController,
-                  builder: (context, child) {
+              child: GetBuilder(
+                  init: getImageController,
+                  builder: (context) {
                     return ListView.builder(
                         itemCount: getImageController.postList.length,
                         itemBuilder: (BuildContext context, int index) {
                           final post = getImageController.postList[index];
-                          return PostContainer(
-                            data: post,
-                          );
+                          return PostContainer(data: post, userId: userId);
                         });
                   }),
             ),

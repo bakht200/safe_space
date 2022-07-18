@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/flutter_secure_storage/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/875654acb8fd75501dc33efa1bebb479/core-1.6.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/flutter_secure_storage/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/875654acb8fd75501dc33efa1bebb479/core-1.6.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/flutter_secure_storage/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/875654acb8fd75501dc33efa1bebb479/core-1.6.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/flutter_secure_storage/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/875654acb8fd75501dc33efa1bebb479/core-1.6.0/res/layout-v21/notification_action.xml"
+    }
+]

@@ -9,7 +9,6 @@ import 'package:safe_space/constants/secure_storage.dart';
 import 'package:safe_space/controller/provider_class.dart';
 import 'package:safe_space/screens/login.dart';
 
-import 'package:firebase_storage/firebase_storage.dart' as firebaseStorage;
 import '../screens/home_screen.dart';
 
 class AuthService {
@@ -36,9 +35,6 @@ class AuthService {
           .get();
       await UserSecureStorage.setUserName(snapshot.docs[0]['firstName']);
       String? name = await UserSecureStorage.fetchUserName();
-
-      print(id);
-      print(name);
 
       Navigator.of(context)
           .push(MaterialPageRoute(builder: (context) => HomeScreen()));
@@ -82,101 +78,38 @@ class AuthService {
     }
   }
 
-  uploadPost(
-      fileType, imageArray, descriptionController, video, context) async {
-    try {
-      User? user = FirebaseAuth.instance.currentUser;
+  // Future uploadVideo(String? file, String subjectname, fileType,
+  //     descriptionController, context) async {
+  //   try {
+  //     String? url;
+  //     User? user = FirebaseAuth.instance.currentUser;
 
-      await FirebaseFirestore.instance
-          .collection("posts")
-          .doc(user?.tenantId)
-          .set({
-        'postedBy': user?.uid,
-        'fileType': fileType,
-        'mediaUrl': fileType == 'Photo' ? imageArray : video,
-        'likes': 0,
-        'postedAt': DateTime.now(),
-        'description': descriptionController,
-      });
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => HomeScreen()));
-      return "uploaded";
-    } catch (e) {
-      return e;
-    }
-  }
+  //     final path = firebaseStorage.FirebaseStorage.instance
+  //         .ref("safespace/$subjectname${user!.uid}");
 
-  Future uploadFile(List<File>? file, String subjectname, fileType,
-      descriptionController, context) async {
-    try {
-      List<String> url = [];
-      User? user = FirebaseAuth.instance.currentUser;
+  //     final child = path.child("$fileType}");
+  //     await child.putFile(File(file!));
+  //     await child.getDownloadURL().then((value) => {url = value});
+  //     String? userName = await UserSecureStorage.fetchUserName();
 
-      final path = firebaseStorage.FirebaseStorage.instance
-          .ref("safespace/$subjectname${user!.uid}");
+  //     await FirebaseFirestore.instance
+  //         .collection("posts")
+  //         .doc(user.tenantId)
+  //         .set({
+  //       'postedBy': user.uid,
+  //       'userName': userName,
+  //       'fileType': fileType,
+  //       'mediaUrl': url,
+  //       'likes': 0,
+  //       'postedAt': DateTime.now(),
+  //       'description': descriptionController,
+  //     });
+  //     Navigator.of(context)
+  //         .push(MaterialPageRoute(builder: (context) => HomeScreen()));
 
-      for (var i = 0; i < file!.length; i++) {
-        final child = path.child(DateTime.now().toString());
-        await child.putFile(File(file[i].path));
-        await child.getDownloadURL().then((value) => {url.add(value)});
-      }
-
-      String? userName = await UserSecureStorage.fetchUserName();
-
-      await FirebaseFirestore.instance
-          .collection("posts")
-          .doc(user.tenantId)
-          .set({
-        'postedBy': user.uid,
-        'userName': userName,
-        'fileType': fileType,
-        'mediaUrl': url,
-        'likes': 0,
-        'postedAt': DateTime.now(),
-        'description': descriptionController,
-      });
-
-      // getImageController.getPostList();
-    } on FirebaseException catch (e) {
-      print(e);
-      rethrow;
-    }
-  }
-
-  Future uploadVideo(String? file, String subjectname, fileType,
-      descriptionController, context) async {
-    try {
-      String? url;
-      User? user = FirebaseAuth.instance.currentUser;
-
-      final path = firebaseStorage.FirebaseStorage.instance
-          .ref("safespace/$subjectname${user!.uid}");
-
-      final child = path.child("${fileType}");
-      await child.putFile(File(file!));
-      await child.getDownloadURL().then((value) => {url = value});
-      String? userName = await UserSecureStorage.fetchUserName();
-
-      await FirebaseFirestore.instance
-          .collection("posts")
-          .doc(user.tenantId)
-          .set({
-        'postedBy': user.uid,
-        'userName': userName,
-        'fileType': fileType,
-        'mediaUrl': url,
-        'likes': 0,
-        'postedAt': DateTime.now(),
-        'description': descriptionController,
-      });
-      //  getImageController.getPostList();
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => HomeScreen()));
-
-      return url;
-    } on FirebaseException catch (e) {
-      print(e);
-      rethrow;
-    }
-  }
+  //     return url;
+  //   } on FirebaseException catch (e) {
+  //     rethrow;
+  //   }
+  // }
 }

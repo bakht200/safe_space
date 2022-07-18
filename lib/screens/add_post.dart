@@ -23,7 +23,7 @@ class CreatePost extends StatefulWidget {
 class _CreatePostState extends State<CreatePost> {
   GetImageController getImageController = GetImageController();
   TextEditingController descriptionController = TextEditingController();
-  String? fileType;
+
   final imageArray = <String>[];
   String? userName;
 
@@ -51,29 +51,18 @@ class _CreatePostState extends State<CreatePost> {
                   primary: Palette.primaryColor,
                 ),
                 onPressed: () async {
-                  if (fileType == 'Photo') {
-                    context.read<AuthService>().uploadFile(
+                  if (getImageController.files == null) {
+                    await getImageController.insertPost(null, "subjectname",
+                        descriptionController.text, context);
+                  } else {
+                    await getImageController.insertPost(
                         getImageController.files,
                         "subjectname",
-                        "Photo",
-                        descriptionController.text,
-                        context);
-                  } else {
-                    context.read<AuthService>().uploadVideo(
-                        getImageController.video!.path,
-                        "subjectname",
-                        "Video",
                         descriptionController.text,
                         context);
                   }
 
-                  // getImageController.getPostList();
-
                   imageArray.clear();
-                  fileType = null;
-
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (builder) => HomeScreen()));
                 },
                 child: const Text('Post')),
           ),
@@ -103,7 +92,7 @@ class _CreatePostState extends State<CreatePost> {
       ),
       body: Padding(
         padding: EdgeInsets.all(8.0.w),
-        child: Container(
+        child: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: ListView(
             children: [
@@ -126,7 +115,7 @@ class _CreatePostState extends State<CreatePost> {
               ),
               Container(
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black),
+                  border: Border.all(color: Colors.grey),
                 ),
                 height: 250.h,
                 child: TextField(
@@ -139,7 +128,7 @@ class _CreatePostState extends State<CreatePost> {
               AnimatedBuilder(
                   animation: getImageController,
                   builder: (context, child) {
-                    return Container(
+                    return SizedBox(
                       height: 250.h,
                       child: getImageController.files != null
                           ? Padding(
@@ -152,7 +141,7 @@ class _CreatePostState extends State<CreatePost> {
                                             getImageController.files!.length,
                                         gridDelegate:
                                             const SliverGridDelegateWithFixedCrossAxisCount(
-                                                crossAxisCount: 3),
+                                                crossAxisCount: 1),
                                         itemBuilder:
                                             (BuildContext context, int index) {
                                           return GestureDetector(
@@ -160,18 +149,20 @@ class _CreatePostState extends State<CreatePost> {
                                               getImageController
                                                   .removeSelectedImage(index);
                                             },
-                                            child: Image.file(
-                                                File(getImageController
-                                                    .files![index].path),
-                                                fit: BoxFit.cover),
+                                            child: getImageController
+                                                    .files![index].path
+                                                    .contains('mp4')
+                                                ? ShowVideo(
+                                                    url: getImageController
+                                                        .files![index].path)
+                                                : Image.file(
+                                                    File(getImageController
+                                                        .files![index].path),
+                                                    fit: BoxFit.cover),
                                           );
                                         });
                                   }))
-                          : getImageController.video != null
-                              ? ShowVideo(
-                                  url: getImageController.video!.path,
-                                )
-                              : const SizedBox(),
+                          : const SizedBox(),
                     );
                   }),
               Divider(height: 10.0.h, thickness: 0.5),
@@ -181,28 +172,14 @@ class _CreatePostState extends State<CreatePost> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     FlatButton.icon(
-                      onPressed: () async {
-                        fileType = 'Video';
-
-                        await getImageController.selectVideos();
-                      },
-                      icon: const Icon(
-                        Icons.videocam,
-                        color: Colors.red,
-                      ),
-                      label: const Text('Video'),
-                    ),
-                    VerticalDivider(width: 8.0.w),
-                    FlatButton.icon(
                       onPressed: () {
-                        fileType = 'Photo';
                         getImageController.selectImages();
                       },
                       icon: const Icon(
                         Icons.photo_library,
                         color: Colors.green,
                       ),
-                      label: const Text('Photo'),
+                      label: const Text('Gallery'),
                     ),
                     VerticalDivider(width: 8.0.w),
                     FlatButton.icon(

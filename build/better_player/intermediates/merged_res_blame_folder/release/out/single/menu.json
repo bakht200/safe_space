@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/menu/example_menu2.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/f9455c21b56d148374e88e8b9fa9c592/core-1.7.0/res/menu/example_menu2.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/menu/example_menu.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/f9455c21b56d148374e88e8b9fa9c592/core-1.7.0/res/menu/example_menu.xml"
+    }
+]

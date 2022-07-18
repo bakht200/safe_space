@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/f9455c21b56d148374e88e8b9fa9c592/core-1.7.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_player_control_view.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_player_control_view.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/f9455c21b56d148374e88e8b9fa9c592/core-1.7.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/70ecf06aa0748afd2d8c9f730dba9613/media-1.4.3/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_styled_player_control_rewind_button.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_styled_player_control_rewind_button.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_media_cancel_action.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/70ecf06aa0748afd2d8c9f730dba9613/media-1.4.3/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_template_media_custom.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/70ecf06aa0748afd2d8c9f730dba9613/media-1.4.3/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_track_selection_dialog.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_track_selection_dialog.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/70ecf06aa0748afd2d8c9f730dba9613/media-1.4.3/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_styled_player_control_view.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_styled_player_control_view.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/f9455c21b56d148374e88e8b9fa9c592/core-1.7.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_styled_player_control_ffwd_button.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_styled_player_control_ffwd_button.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/f9455c21b56d148374e88e8b9fa9c592/core-1.7.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_styled_settings_list.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_styled_settings_list.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/f9455c21b56d148374e88e8b9fa9c592/core-1.7.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_styled_sub_settings_list_item.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_styled_sub_settings_list_item.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_styled_settings_list_item.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_styled_settings_list_item.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_list_divider.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_list_divider.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_media_action.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/70ecf06aa0748afd2d8c9f730dba9613/media-1.4.3/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/f9455c21b56d148374e88e8b9fa9c592/core-1.7.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_player_view.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_player_view.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/exo_styled_player_view.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/a8228dd36b303a98b1b628e71c477242/jetified-exoplayer-ui-2.17.1/res/layout/exo_styled_player_view.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_template_media.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/70ecf06aa0748afd2d8c9f730dba9613/media-1.4.3/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_template_big_media.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/70ecf06aa0748afd2d8c9f730dba9613/media-1.4.3/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_template_big_media_custom.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/70ecf06aa0748afd2d8c9f730dba9613/media-1.4.3/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/productbox/Desktop/Webview/safe_space/build/better_player/intermediates/res/merged/release/layout/notification_template_lines_media.xml",
+        "source": "/Users/productbox/.gradle/caches/transforms-2/files-2.1/70ecf06aa0748afd2d8c9f730dba9613/media-1.4.3/res/layout/notification_template_lines_media.xml"
+    }
+]

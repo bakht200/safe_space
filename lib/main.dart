@@ -31,7 +31,7 @@ void main() async {
               initialData: null,
             ),
           ],
-          child: const MaterialApp(
+          child: MaterialApp(
             debugShowCheckedModeBanner: false,
             home: AuthWrapper(),
           ),
